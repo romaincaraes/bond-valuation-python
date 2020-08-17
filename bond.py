@@ -24,6 +24,9 @@ class Bond() :
 			ttm = round(ttm.days/360)
 		return ttm
 
+	def get_coupon_dates(self) :
+		return
+
 	def get_price(self, ytm) :
 		price = 0
 		ttm = self.get_term_to_maturity("y")
