@@ -39,6 +39,9 @@ class Bond() :
 				present_value = cashflow / ((1 + ytm) ** t)
 			price += present_value
 		return price
+		
+	def get_cashflows(self, ytm) :
+		return
 
 	def get_current_yield(self, ytm) :
 		cashflow = self.par * self.coupon
