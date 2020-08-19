@@ -47,7 +47,20 @@ class Bond() :
 		return price
 		
 	def get_cashflows(self, ytm) :
-		return
+		cf = []
+		ttm = self.get_term_to_maturity("y")
+		cashflow = (self.par * self.coupon) / self.frequency
+		ytm /= self.frequency
+		for t in range(1, ttm * self.frequency + 1) :
+			if (t == ttm * self.frequency) :
+				present_value = (self.par + cashflow) / ((1 + ytm) ** t)
+				cashflow = self.par + cashflow
+			else :
+				present_value = cashflow / ((1 + ytm) ** t)
+			cf.append([t, cashflow, present_value])
+		ytm *= self.frequency
+		df = pd.DataFrame((cf), columns=["T", "CF", "PV"]).set_index("T")
+		return df
 
 	def get_current_yield(self, ytm) :
 		cashflow = self.par * self.coupon
