@@ -31,7 +31,6 @@ class Bond() :
 		for t in range(1, ttm * self.frequency + 1) :
 			date = (maturity - datetime.timedelta(days=((365.25 * t) / self.frequency))).strftime("%Y-%m-%d")
 			coupon_dates.append(date)
-		coupon_dates = pd.DataFrame(coupon_dates[::-1]).set_index(0)
 		return coupon_dates
 
 	def get_price(self, ytm) :
