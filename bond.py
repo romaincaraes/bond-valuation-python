@@ -59,7 +59,9 @@ class Bond() :
 				present_value = cashflow / ((1 + ytm) ** t)
 			cf.append([t, cashflow, present_value])
 		ytm *= self.frequency
-		df = pd.DataFrame((cf), columns=["T", "CF", "PV"]).set_index("T")
+		df = pd.DataFrame((cf), columns=["T", "CF", "PV"])
+		df['date'] = self.get_coupon_dates()[::-1]
+		df = df[["T", "date", "CF", "PV"]].set_index("T")
 		return df
 
 	def get_current_yield(self, ytm) :
