@@ -73,13 +73,13 @@ class Bond() :
 
 def user_input_features() :
     st.sidebar.header("Bond")
-    par = st.sidebar.number_input("Par", 0.00, 100000000000.00, 1000000.00, step=500.00)
-    coupon = st.sidebar.number_input("Annual Coupon (%)", 0.00, 100.00, 1.50, step=0.05)
-    frequency = st.sidebar.selectbox("Frequency", [1, 2, 4, 12], 3)
-    maturity = st.sidebar.date_input("Maturity", datetime.date(2030, 12, 31))
+    par = st.sidebar.number_input(label="Par", min_value=0.00, value=1000000.00, step=500.00)
+    coupon = st.sidebar.number_input(label="Annual Coupon (%)", min_value=0.00, max_value=100.00, value=1.50, step=0.05)
+    frequency = st.sidebar.selectbox(label="Frequency", options=[1, 2, 4, 12], index=3)
+    maturity = st.sidebar.date_input(label="Maturity", value=datetime.date(2030, 12, 31))
 
     st.sidebar.header("Market")
-    rate = st.sidebar.number_input("Market Rate (%)", 0.00, 100.00, 1.00, step=0.05)
+    rate = st.sidebar.number_input(label="Market Rate (%)", min_value=0.00, max_value=100.00, value=1.00, step=0.05)
 
     data = {
         "par" : par,
