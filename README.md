@@ -21,9 +21,10 @@ Install the required dependencies :
 	
 ### Usage
 
-To use the Bond Valuation web app, run the __app.py__ script : 
+To use the Bond Valuation web app, run the __bond.py__ script in __bond-valuation/__ folder :
 
-	streamlit run app.py
+	cd bond-valuation
+	streamlit run bond.py
 
 A new tab should open in your browser :
 
