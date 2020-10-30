@@ -91,9 +91,12 @@ def user_input_features() :
     features = pd.DataFrame(data, index=[0])
     return features
 
-st.subheader("User Input Parameters")
+st.header("User Input Parameters")
 features = user_input_features()
-st.write(features)
+st.subheader("Bond")
+st.write(features[['par', 'coupon', 'frequency', 'maturity']])
+st.subheader("Market")
+st.write(features[['rate']])
 
 bond = Bond(
     par=features['par'][0],
@@ -104,7 +107,7 @@ bond = Bond(
 
 rate = features['rate'][0]/100
 
-st.subheader("Output")
+st.header("Output")
 price = round(bond.get_price(rate), 2)
 st.write("Price", price)
 
