@@ -20,9 +20,9 @@ class Bond() :
         if (unit == "d") :
             ttm = ttm.days
         elif (unit == "m") :
-            ttm = round(ttm.days/30)
+            ttm = round(ttm.days / 30)
         elif (unit == "y") :
-            ttm = round(ttm.days/360)
+            ttm = round(ttm.days / 360)
         return ttm
 
     def get_coupon_dates(self) :
@@ -100,19 +100,19 @@ st.write(features[['rate']])
 
 bond = Bond(
     par=features['par'][0],
-    coupon=features['coupon'][0]/100,
+    coupon=features['coupon'][0] / 100,
     frequency=features['frequency'][0],
     maturity=features['maturity'][0]
 )
 
-rate = features['rate'][0]/100
+rate = features['rate'][0] / 100
 
 st.header("Output")
 price = round(bond.get_price(rate), 2)
 st.write("Price", price)
 
 current_yield = round(bond.get_current_yield(rate), 6)
-st.write("Current Yield", current_yield*100, "%")
+st.write("Current Yield", current_yield * 100, "%")
 
 def main() :
     pass
