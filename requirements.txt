@@ -1,5 +1,5 @@
 altair==4.1.0
-appnope==0.1.0
+appnope==0.1.2
 argon2-cffi==20.1.0
 astor==0.8.1
 async-generator==1.10
@@ -8,10 +8,10 @@ backcall==0.2.0
 base58==2.0.1
 bleach==3.2.1
 blinker==1.4
-boto3==1.16.26
-botocore==1.19.26
+boto3==1.16.30
+botocore==1.19.30
 cachetools==4.1.1
-certifi==2020.11.8
+certifi==2020.12.5
 cffi==1.14.4
 chardet==3.0.4
 click==7.1.2
@@ -23,7 +23,7 @@ enum-compat==0.0.3
 gitdb==4.0.5
 GitPython==3.1.11
 idna==2.10
-importlib-metadata==3.1.0
+importlib-metadata==3.1.1
 ipykernel==5.3.4
 ipython==7.19.0
 ipython-genutils==0.2.0
@@ -44,7 +44,7 @@ nest-asyncio==1.4.3
 notebook==6.1.5
 numpy==1.19.4
 packaging==20.7
-pandas==1.1.4
+pandas==1.1.5
 pandocfilters==1.4.3
 parso==0.8.0
 pathtools==0.1.2
@@ -58,7 +58,7 @@ ptyprocess==0.6.0
 pyarrow==2.0.0
 pycparser==2.20
 pydeck==0.5.0
-Pygments==2.7.2
+Pygments==2.7.3
 pyparsing==2.4.7
 pyrsistent==0.17.3
 python-dateutil==2.8.1
@@ -70,7 +70,7 @@ scipy==1.5.4
 Send2Trash==1.5.0
 six==1.15.0
 smmap==3.0.4
-streamlit==0.71.0
+streamlit==0.72.0
 terminado==0.9.1
 testpath==0.4.4
 toml==0.10.2
