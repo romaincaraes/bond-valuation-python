@@ -124,10 +124,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-# Passwords, keys and credentials
-*password*
-*passphrase*
-*.key
-*creds*
-*credentials*
