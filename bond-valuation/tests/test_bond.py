@@ -17,3 +17,6 @@ def test_get_price(bond):
 
 def test_get_cashflows(bond):
     assert isinstance(bond.get_cashflows(0.1), pd.DataFrame)
+
+def test_get_current_yield(bond):
+    assert isinstance(bond.get_current_yield(0.1), float)
