@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #coding: utf-8
 
-import time, datetime
+import datetime
 import numpy as np
 import pandas as pd
 import streamlit as st
