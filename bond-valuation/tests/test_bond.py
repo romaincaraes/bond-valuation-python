@@ -10,3 +10,6 @@ def test_get_term_to_maturity(bond):
 
 def test_get_coupon_dates(bond):
     assert isinstance(bond.get_coupon_dates(), list)
+
+def test_get_price(bond):
+    assert isinstance(bond.get_price(0.1), float)
