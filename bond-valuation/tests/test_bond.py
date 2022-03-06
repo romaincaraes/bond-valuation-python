@@ -1,6 +1,7 @@
 # test_bond.py
 
 from bond import *
+import pandas as pd
 
 def test_bond(bond):
     assert isinstance(bond, Bond)
@@ -13,3 +14,6 @@ def test_get_coupon_dates(bond):
 
 def test_get_price(bond):
     assert isinstance(bond.get_price(0.1), float)
+
+def test_get_cashflows(bond):
+    assert isinstance(bond.get_cashflows(0.1), pd.DataFrame)
