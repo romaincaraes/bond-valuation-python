@@ -2,7 +2,6 @@
 
 A bond valuation webapp in Python.
 
-
 ### Installation
 
 Clone this repository :
@@ -34,7 +33,6 @@ A new tab should open in your browser :
 
 - [Numpy](https://numpy.org/) - Fundamental package for scientific computing with Python,
 - [Pandas](https://pandas.pydata.org/) - Library providing data structures and data analysis tools for Python,
-- [Scipy](https://scipy.org/) - Software for mathematics, science, and engineering,
 - [Streamlit](https://streamlit.io) - Open-source app framework,
 
 ### Dependencies
@@ -45,7 +43,6 @@ All the Python packages needed are listed in [requirements.txt](https://github.c
 ### License
 
 This project is licensed under the [MIT License](https://github.com/romaincaraes/bond-valuation-python/blob/master/LICENSE).
-
 
 ### Authors
 
