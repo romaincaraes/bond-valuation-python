@@ -12,3 +12,8 @@ def bond():
         maturity=(datetime.datetime.now() + datetime.timedelta(days=random.randint(0,36500))).strftime("%Y-%m-%d") # Random date in the next 100 years (100*365 days)
     )
     return bond
+
+@pytest.fixture
+def ytm():
+    ytm = random.random() # Random ytm between 0,00 % and 100,00 % (0 and 1)
+    return int(ytm)
