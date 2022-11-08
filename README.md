@@ -47,7 +47,5 @@ This project is licensed under the [MIT License](https://github.com/romaincaraes
 ### Authors
 
 - **Romain Caraës** - [romaincaraes](https://github.com/romaincaraes)
-	- Email : [hello@romaincaraes.fr](mailto:hello@romaincaraes.fr)
-	- Twitter : [@romaincaraes](https://twitter.com/romaincaraes)
 
 See also the [GitHub Contributors page](https://github.com/romaincaraes/bond-valuation-python/graphs/contributors).
