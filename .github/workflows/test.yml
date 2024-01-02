@@ -2,9 +2,9 @@ name: Test Option Valuation Webapp
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "mains" ]
 
 permissions:
   contents: read
