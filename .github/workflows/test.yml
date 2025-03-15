@@ -1,4 +1,4 @@
-name: Test Option Valuation Webapp
+name: Test Bond Valuation Webapp
 
 on:
   push:
